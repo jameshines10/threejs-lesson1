@@ -40,9 +40,9 @@
     			triangle.computeBoundingSphere();
     			
           var material = new THREE.MeshBasicMaterial({color: 0xffffff}); 
-          var object = new THREE.Mesh( triangle, material );
+          var triangleMesh = new THREE.Mesh( triangle, material );
 
-          scene.add(object);
+          scene.add(triangleMesh);
           
           camera.position.z = 50;
           
